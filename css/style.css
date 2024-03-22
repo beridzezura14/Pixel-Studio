@@ -136,7 +136,7 @@ header{
     z-index: 1111;
 }
 .navbar{
-    bottom: 0%;
+    bottom: -50px;
     position: absolute;
     z-index: 111;
     right: 20px !important;
