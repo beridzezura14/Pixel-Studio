@@ -174,21 +174,21 @@
 
 .persone-info-row-img{
     height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/vano.jpg) center, no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(../img/team/vano.jpg) center, no-repeat;
     background-size: cover;
     position: relative;
 }
 
 .persone-info-row-img-ilia{
-    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/ilia.JPG) center, no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(../img/team/ilia.JPG) center, no-repeat;
     background-size: cover;
 }
 .persone-info-row-img-rati{
-    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/rati.jpg) center, no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(../img/team/rati.jpg) center, no-repeat;
     background-size: cover;
 }
 .persone-info-row-img-zura{
-    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/zura.jpg) center, no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(../img/team/zura.jpg) center, no-repeat;
     background-size: cover;
 }
 .persone-social-icon{

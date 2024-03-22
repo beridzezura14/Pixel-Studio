@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'font1';
-    src: url(/fonts/font1.ttf);
+    src: url(../fonts/font1.ttf);
 }
 
 @font-face {
     font-family: 'Symtext';
-    src: url(/fonts/Symtext.ttf);
+    src: url(../fonts/Symtext.ttf);
 }
 *{
     margin: 0;
@@ -110,7 +110,7 @@ body{
 
 header{
     position: relative;
-    background-image: url(/img/bg_16bit.png);
+    background-image: url(../img/bg_16bit.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -794,7 +794,7 @@ header{
     }
 }
 .services-item:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url(/img/bg.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url(../img/bg.jpg) center;
     background-size: cover;
     transition: 1.5s;
     animation: 1s imgshow linear;
@@ -909,7 +909,7 @@ header{
 }
 .personal-img{
     margin-top: 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/vano.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../img/team/vano.jpg) center;
     background-size: cover;
     border: 50%;
     width: 200px;
@@ -921,15 +921,15 @@ header{
     z-index: 11111;
 }
 .name-ilia{
-    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/ilia.JPG) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../img/team/ilia.JPG) center;
     background-size: cover;
 }
 .name-rati{
-    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/rati.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../img/team/rati.jpg) center;
     background-size: cover;
 }
 .name-zura{
-    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/zura.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../img/team/zura.jpg) center;
     background-size: cover;
 }
 .social-icon{
