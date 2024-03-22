@@ -1,0 +1,251 @@
+@media(min-width: 560px){
+    .all-services{
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 4rem 2rem !important;
+    }
+    .all-services-item{
+        width: auto;
+    }
+
+    .persone-info-row-img{
+        height: 600px !important;
+    }
+
+}
+@media(min-width: 760px){
+    .persone-info-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .persone-info-row-img{
+        width: 48%;
+    }
+    .persone-info-row-text{
+        width: 45%;
+    }
+
+}
+@media(min-width: 1120px){
+    header{
+        height: 130px !important;
+    }
+    .navbar-Two{
+        display: flex;
+    }
+
+    
+/* ---------------------------------------------------------*/
+/* --------------  services section  --------------------*/
+/* ---------------------------------------------------------*/
+
+    .all-services{
+        max-width: 1100px !important;
+   
+    }
+    .all-services-item h2{
+        font-size: 35px;
+    }
+
+/* ---------------------------------------------------------*/
+/* ---------------   start service-page */
+/* ---------------------------------------------------------*/
+    .service-page{
+        max-width: 1100px !important;
+    }
+    .img-and-bg{
+        display: flex;
+        align-items: center;
+        background-color: #683434;
+        padding: 2rem;
+        height: 280px;
+    }
+
+    .img-and-bg div h2{
+        margin-top: 0;
+        font-size: 45px;
+    }
+    .img-and-bg img{
+        top: 2rem;
+        height: 300px;
+        width: 500px !important;
+        position: relative;
+    }
+    .start-describe-service{
+        margin-top: 8rem;
+    }
+    .other-services{
+        max-width: 1100px !important;
+        gap: 1rem;
+    }
+
+/* ---------------------------------------------------------*/
+/* --------  start person page  */
+/* ---------------------------------------------------------*/
+
+    .persone-info h1{
+        font-size: 40px !important;
+    }
+    .persone-info{
+        max-width: 1100px !important;
+    }
+    .persone-social-icon i{
+        transition: .5s;
+        cursor: pointer;
+    }
+    .persone-social-icon i:hover{
+        background-color: #a43737;
+    }
+
+/* ---------------------------------------------------------*/
+/* --------------   start contact  page */
+/* ---------------------------------------------------------*/
+
+    .contact{
+        max-width: 1100px;
+        display: flex;
+    }
+    .contact-text {
+        width: 50%;
+    }
+    .form-place{
+        width: 50%;
+    }
+    .contact-text {
+        border-bottom: none;
+        border-right: 1px solid #333;
+        padding-bottom: 0;
+        padding-right: 3rem;
+    }
+    .contact-form{
+        padding-left: 3rem;
+        margin-top: 0rem;
+        gap: 3rem;
+    }
+
+/* ---------------------------------------------------------*/
+/*  ------------   start work project section ----------- */
+/* ---------------------------------------------------------*/
+
+    .projects{
+        max-width: 100%;
+        gap: 2rem !important;
+    }
+    .project-item{
+        padding-bottom: 0rem !important;
+        border: none !important;
+    }
+    .item-number{
+        position: relative;
+        top: 35px !important;
+    }
+
+    .item-name{
+        font-size: 70px !important;
+        font-weight: 700;
+        font-size: 3em;
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+    }
+    
+    .project-item:hover .project-item-name{
+        display: none;
+    }
+    
+    .project-item:hover .project-item-name-marquee{
+        display: block;
+        font-size: 50px;
+    }
+    
+    .project-img{
+        position: absolute;
+        z-index: 1111 !important;
+        right: 1rem;
+        top: 1rem;
+        width: 400px !important;
+        transform: scale(0);
+        border: 5px solid #fff;
+        padding: 5px;
+    }
+    .project-item:hover .project-img{
+        transform: scale(1) rotate(3deg);
+        animation: 1s rotateimg ease;
+    }
+
+    @keyframes rotateimg {
+        from{
+            transform: scale(0) rotate(0deg);
+        }
+        to{
+            transform: scale(1) rotate(3deg);
+        }
+    }
+    .footer-work{
+        margin-top: 15rem;
+    }
+
+
+/* ---------------------------------------------------------*/
+/*  ------------   start price section ----------- */
+/* ---------------------------------------------------------*/
+
+    .prices-row{
+        max-width: 1100px !important;
+        margin: 4rem auto;
+        color: #fff;
+    }
+    .price-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site-type h2{
+        font-size: 35px;
+        width: 300px;
+    }
+    
+    .site-p{
+        margin-top: 0rem !important;
+        width: 400px;
+    }
+    
+    .site-price{
+        margin-top: 0rem !important;
+        width: 170px;
+    }
+        
+    .site-order{
+        margin-top: 0 !important;
+        transition: .7s;
+    }
+    .site-order:hover{
+        margin-top: 0 !important;
+        background-color: transparent;
+        color: #a43737;
+        border: 1px solid #a43737;
+    }
+
+}
+
+@media(min-width: 1420px){
+    .navbar{
+        bottom: -20%;
+    }
+
+/* ---------------------------------------------------------*/
+/*  ------------   start work project section ----------- */
+/* ---------------------------------------------------------*/
+    
+    .item-name{
+        font-size: 100px !important;
+    }
+    .project-item-name-marquee span {
+        font-size: 100px !important;
+
+    }
+    .project-img{
+        width: 500px !important;
+    }
+}

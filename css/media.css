@@ -1,0 +1,329 @@
+@media(min-width: 319px){
+    .about-icons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+/* ---------------------------------------------------------*/
+/* --------------   start marquee section --------------------*/
+/* ---------------------------------------------------------*/
+    .marquee-content {
+        font-size: 38px;
+    }   
+}
+@media(min-width: 560px){
+    .rain-line{
+        height: 90rem;
+    }
+    .hero-h1{
+        font-size: 55px;
+
+    }
+    .world{
+        font-size: 27rem;
+    }
+/* ---------------------------------------------------------*/
+/* --------------   end marquee section --------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* --------------   start about section --------------------*/
+/* ---------------------------------------------------------*/
+
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-text-paragraph{
+        width: 400px;
+    }
+/* ---------------------------------------------------------*/
+/* --------------   start marquee section --------------------*/
+/* ---------------------------------------------------------*/
+
+
+    .marquee-content {
+        font-size: 70px;
+    }
+
+    .marquee2{
+        transform: rotate(-7.5deg);
+    }
+    .services-item{
+        padding: 30px 20px 40px;
+        height: 390px;
+    }
+/* ---------------------------------------------------------*/
+/* --------------   end marquee section --------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* --------------   start footer section --------------------*/
+/* ---------------------------------------------------------*/
+    .footer-head{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+        top: -40px;
+    }
+    .footer-call{
+        margin-top: 0;
+    }
+/* ---------------------------------------------------------*/
+/* --------------  end footer section --------------------*/
+/* ---------------------------------------------------------*/
+
+}
+@media(min-width: 1120px){
+    .rain-line{
+        height: 110rem;
+    }
+    .header, .hero{
+        max-width: 1100px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .logo{
+        text-align: center;
+        font-size: 40px;
+    }
+    .open{
+        display: none;
+    }
+    .LetsTalk{
+        display: block;
+    }
+/* ---------------------------------------------------------*/
+/* --------------   start hero section --------------------*/
+/* ---------------------------------------------------------*/
+
+    .hero-h1{
+        position: relative;
+        font-size: 80px;
+        /* left: -10rem; */
+        line-height: 100px;
+    }
+    .world{
+        font-size: 35rem;
+        right: 40px;
+ 
+    }
+
+    .hero-details a{
+        color: #dfdfdf;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .circle{
+        display: flex;
+    }
+
+/* ---------------------------------------------------------*/
+/* --------------   end hero section --------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* --------------   start about section --------------------*/
+/* ---------------------------------------------------------*/
+
+    .about{
+        position: relative;
+        max-width: 1100px;
+        gap: 60px;
+    }
+    .bg-relative{
+        width: 500px;
+    }
+    .team-pic{
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+    .about-text-header{
+        font-size: 60px;
+    }
+    .about-text-paragraph{
+        width: 550px;
+    }
+
+
+/* ---------------------------------------------------------*/
+/* --------------   start marquee section --------------------*/
+/* ---------------------------------------------------------*/
+
+
+    .ranning-paragraph{
+        padding: 4.5rem 0;
+    }
+    .marquee-content {
+        font-size: 90px;
+    }    
+    .marquee2{
+        transform: rotate(-6.5deg);
+    }
+
+    
+/* ---------------------------------------------------------*/
+/* --------------   end marquee section --------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* --------------   start service section --------------------*/
+/* ---------------------------------------------------------*/
+
+    .services{
+        max-width: 1100px;
+        position: relative;
+    }
+    .services-row{
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 1rem;
+    }
+    .services-item{
+        padding: 30px 20px 40px;
+    }
+    .services h2{
+        font-size: 60px;
+    }
+    .services h2::before{
+        content: "services";
+        font-weight: 800;
+        letter-spacing: 15px;
+        font-family: "Montserrat", sans-serif;
+        color: #1b1b1b;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        font-size: 160px;
+        z-index: -1;
+    }
+    .service-btn{
+        position: absolute;
+        bottom: 40px;
+    }
+
+    
+/* ---------------------------------------------------------*/
+/* --------------   end servicesection --------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* --------------   start ios-app section --------------------*/
+/* ---------------------------------------------------------*/
+    .ios-app{
+        flex-direction: row;
+        max-width: 1180px;
+    }
+    .ios-app-text{
+        order: 1;
+    }
+    .video_intro {
+        width: 700px;
+    }
+    .video_intro{
+        order: 2;
+    }
+    .ios-app-two{
+        padding-top: 10rem;
+    }
+/* ---------------------------------------------------------*/
+/* --------------   end ios-app section --------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* --------------   start index page team members section -----------------*/
+/* ---------------------------------------------------------*/
+
+    
+    .team-members{
+        max-width: 1100px;
+    }
+    .member{
+        height: 450px;
+    }
+    .personal-img{
+        position: relative;
+        z-index: 11111;
+    }
+    .profile-desktop{
+        transition: 1s;
+        position: relative;
+        top: -30px;
+    }
+    .social-icon{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        bottom: 10px;
+    }
+    .social-icon i{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+    .profile-effect{
+        opacity: 0;
+        transition: 1s;
+        width: 300px;
+        height: 300px;
+    }
+
+    .member:hover .social-icon{
+        opacity: 1;
+        animation: 1s socialicons ease;
+    }
+    .member:hover .profile-effect{
+        position: absolute;
+        opacity: 1;
+        animation: 1s circleeffect ease;
+    } 
+
+    @keyframes socialicons {
+        from{
+            bottom: 100px;
+        }
+        to{
+            bottom: 10px;
+        }
+    }
+    @keyframes circleeffect {
+        from{
+            width: 0px;
+            height: 0;
+        }
+        to{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+
+/* ---------------------------------------------------------*/
+/* -----------   end index page team members section -----------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* --------------   start footer section -----------------*/
+/* -------------------------------------------------------*/
+
+    footer{
+        padding: 0 0 4rem 0;
+    }
+    .footer-head{
+        max-width: 1100px;
+    }
+    .text-row{
+        max-width: 1100px;
+    }
+
+}
+@media(min-width: 1420px){
+    .navbar{
+        bottom: -20%;
+    }
+}

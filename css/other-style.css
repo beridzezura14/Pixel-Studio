@@ -1,0 +1,435 @@
+.all-section-services h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 4rem;
+    font-size: 50px;
+}
+.all-services{
+    max-width: 90%;
+    margin: 4rem auto;
+}
+.all-services{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    color: #fff;
+}
+.corner{
+    margin: 10px 0 0 10px;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-right-radius: 20%;
+    box-shadow: -10px -10px 0px #a43737;
+}
+.services-item-head{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.all-services-item{
+    position: relative;
+}
+.shape{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: invert(28%) sepia(13%) saturate(3882%) hue-rotate(321deg) brightness(105%) contrast(93%);
+}
+.services-number-line{
+    width: 100px;
+    height: 2px;
+    background-color: #a43737;
+}
+.all-services-number{
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 0.5;
+}
+.all-services-item h2{
+    margin-top: 1rem;
+}
+.all-services-item p{
+    color: #bdbdbd;
+    padding-top: 1rem;
+    padding-bottom: 30px;
+}
+.all-service-btn{
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------------------------------------------------------*/
+/* ---------------   start service-page  ------------------*/
+/* ---------------------------------------------------------*/
+
+.service-page{
+    max-width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    color: #fff;
+    border-bottom: 1px solid #333;
+}
+.service-map{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a43737;
+}
+.service-map a{
+    color: #bdbdbd;
+}
+
+.img-and-bg{
+    margin: 2rem 0;
+}
+.img-and-bg h2{
+    margin-top: 1rem;
+    font-size: 30px;
+}
+.img-and-bg p{
+    font-size: 15px;
+    color: #bdbdbd;
+    margin-top: 1rem;
+}
+.img-and-bg img{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.start-describe-service{
+    color: #bdbdbd;
+}
+
+.start-describe-service p:nth-child(2){
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 17px;
+}
+.service-list{
+    margin-top: 1rem;
+}
+.service-list li{
+    margin-left: 10px;
+    list-style: disc inside ;
+    color: #bdbdbd;
+}
+.service-list li::marker{
+    color: #a43737;
+}
+
+.site-types{
+    margin-top: 3rem;
+}
+
+.service-finally-text{
+    margin-top: 3rem;
+    color: #bdbdbd;
+}
+
+
+.other-services{
+    max-width: 90%;
+    margin: 4rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));   
+    display: grid;
+    gap: 1rem;
+}
+.other-services-row{
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.other-services-row img{
+    filter: invert(35%) sepia(10%) saturate(6205%) hue-rotate(326deg) brightness(80%) contrast(100%);
+}
+.other-services-row h2{
+    margin-top: 1.5rem;
+}
+.other-services-row p{
+    color: #bdbdbd;
+    margin-top: 1rem;
+}
+
+/* ---------------------------------------------------------*/
+/* ------------------------   start  team page ----------- */
+/* ---------------------------------------------------------*/
+
+.persone-info{
+    max-width: 90%;
+    margin: 4rem auto;
+    color: #fff;
+}
+.persone-info h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.persone-info-row{
+    margin: 4rem 0;
+
+}
+
+.persone-info-row-img{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/vano.jpg) center, no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.persone-info-row-img-ilia{
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/ilia.JPG) center, no-repeat;
+    background-size: cover;
+}
+.persone-info-row-img-rati{
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/rati.jpg) center, no-repeat;
+    background-size: cover;
+}
+.persone-info-row-img-zura{
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)), url(/img/team/zura.jpg) center, no-repeat;
+    background-size: cover;
+}
+.persone-social-icon{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50px;
+    display: flex;
+    gap: 10px;
+}
+.persone-social-icon i{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333d6;
+}
+.persone-info-row-text{
+    margin: 2rem 0;
+}
+.persone-info-row-text h2{
+    font-size: 30px;
+}
+.persone-info-row-text h3{
+    color: #a43737;
+    margin-top: 1rem;
+}
+.persone-info-row-text p{
+    margin-top: 1rem;
+    color: #bdbdbd;
+}
+
+.contact-person{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-person h4{
+    margin-top: 2rem;
+}
+
+.call-person, .text-person, .text-person{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.call-person ion-icon, .text-person ion-icon, .text-person ion-icon{
+    /* height: 50px;
+    width: 50px; */
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.call-person a, .text-person a, .text-person a{
+    color: #bdbdbd;
+}
+
+.contact-person h5{
+    font-weight: 400;
+    color: #a43737;
+    font-size: 19px;
+}
+
+/* ---------------------------------------------------------*/
+/* --------------   start work (project) section ----------- */
+/* ---------------------------------------------------------*/
+.projects{
+    max-width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project-item{
+    position: relative;
+    color: #fff !important;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2rem;
+}
+.project-item:last-child{
+    border-bottom: none;
+
+}
+.project-item-name{
+    display: flex;
+    gap: 20px;
+}
+.item-number{
+    position: relative;
+    top: 10px;
+}
+
+.item-name{
+    font-size: 40px;
+}
+
+
+.project-item-name-marquee{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 2px #a43737;
+    
+}
+.project-item-name-marquee span {
+    display: inline-block;
+    animation: marquee-work 10s linear infinite;
+    font-size: 70px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+
+@keyframes marquee-work {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-10%);
+    } 
+}
+
+
+.project-img{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------*/
+/* ----------------------   start price-section ----------- */
+/* ---------------------------------------------------------*/
+.section-price{
+    margin: 4rem 0;
+}
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+}
+
+.text-wrapper h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 1rem;
+    letter-spacing: 1px;
+    animation: move-rtl 4s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text-wrapper1 {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: #a43737;
+}
+
+.text-wrapper1 h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    font-style: italic;
+    white-space: nowrap;
+    padding: 10px 1rem;
+    letter-spacing: 1px;
+    animation: move-rtl1 4s linear infinite;
+}
+
+@keyframes move-rtl1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.prices-row{
+    max-width: 90%;
+    margin: 4rem auto;
+    color: #fff;
+}
+
+.price-item{
+    border-bottom: 1px solid #333;
+    padding: 2rem 0;
+}
+.price-item:last-child{
+    border: none;
+}
+.site-type h2{
+    font-size: 35px;
+}
+.site-type p{
+    color: #bdbdbd;
+}
+
+.site-p{
+    margin-top: 2rem;
+    color: #bdbdbd;
+}
+
+.site-price{
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.site-order{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #fff;
+}

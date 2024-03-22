@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+@font-face {
+    font-family: 'font1';
+    src: url(/fonts/font1.ttf);
+}
+
+@font-face {
+    font-family: 'Symtext';
+    src: url(/fonts/Symtext.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: cell;
+    background-color: #1b191b;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+/* ---------------------------------------------------------*/
+/* ---------------    this is rain animation part ----------*/
+/* ---------------------------------------------------------*/
+.rain-line{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500%;
+}
+
+.rain1, .rain2, .rain3, .rain4, .rain5, .rain6{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #80808069;
+    left: 13%;
+    z-index: 1;
+}
+.rain2{
+    left: 28%;
+}
+.rain3{
+    left: 43%;
+}
+.rain4{
+    left: 58%;
+}
+.rain5{
+    left: 73%;
+}
+.rain6{
+    left: 88%;
+}
+
+.move1, .move2, .move3, .move4, .move5, .move6{
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(145, 145, 145);
+    left: 13%;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 138px, rgba(255, 255, 255, 0.22) 0px 15px 112px;
+    z-index: 1;
+    animation: 8s toptobottom ease-in infinite;
+}
+.move2{
+    left: 28%;
+    animation: 9s toptobottom ease-in infinite;
+}
+.move3{
+    left: 43%;
+    animation: 10s toptobottom ease-in infinite;
+}
+.move4{
+    left: 58%;
+    animation: 7s toptobottom ease-in infinite;
+}
+.move5{
+    left: 73%;
+    animation: 11s toptobottom ease-in infinite;
+}
+.move6{
+    left: 88%;
+    animation: 6s toptobottom ease-in infinite;
+}
+
+@keyframes toptobottom{
+    from{
+        top: 0;
+    }
+    to{
+        top: 98%;
+    }
+}
+/* ---------------------------------------------------------*/
+/* ------------------ end rain section ----------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* ---------------   start header --------------------------*/
+/* ---------------------------------------------------------*/
+
+header{
+    position: relative;
+    background-image: url(/img/bg_16bit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    max-width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-align: left;
+    font-family: 'Symtext', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1111;
+}
+.navbar{
+    bottom: 0%;
+    position: absolute;
+    z-index: 111;
+    right: 20px !important;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 35%;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    display: none;
+    width: 50%;
+}
+
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar li a{
+    color: white;
+    transition: .5s;
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.open{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------*/
+/* ---------------   end header --------------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start hero section ----------------------*/
+/* ---------------------------------------------------------*/
+
+.socials{
+    position: absolute;
+    top: 50%;
+    width: 2.5%;
+    display: none;
+}
+
+
+.hero{
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    height: 78vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-h1{
+    margin-top: -100px;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    font-size: 20px;
+    z-index: 111;
+    width: 100%;
+    text-shadow: 0 0 15px black;
+    margin-bottom: 10px;
+}
+
+
+.hero-details{
+    padding: 10px 15px 10px 0;
+    border-radius: 10px;
+    text-align: end;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-details:hover{
+    color: #a43737;
+    transition: .5s;
+    border-radius: 13px;
+}
+
+.hero-details a{
+    color: #dfdfdf;
+    font-size: 15px;
+    border-bottom: 1px solid #a43737;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid #a43737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+.dot{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: #a43737;
+}
+.width-line{
+    position: absolute;
+    left: -50%;
+    width: 30px;
+    opacity: 0;
+    height: 1.5px;
+    background-color: #a43737;
+}
+
+
+.hero-details a:hover{
+    color: #a43737;
+    transition: .5s;
+}
+.hero-details:hover .width-line{
+    opacity: 1;
+    animation: .5s righttoleft ease;
+}
+
+@keyframes righttoleft{
+    from{
+        width: 0;
+    }
+    to{
+        width: 30px;
+    }
+}
+
+/* scroll down section*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mouse {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #ffffff75;
+	border-radius: 60px;
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}
+/* scroll down section end */
+
+
+
+/* ---------------------------------------------------------*/
+/* -------------   end hero section ------------------------*/
+/* ---------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start about section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+.about{
+    max-width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    color: white;   
+    position: relative;
+    z-index: 1111;
+}
+
+.team-pic{
+    width: 100%;
+    z-index: 1111;
+    position: relative;
+
+}
+
+.about-text{
+    margin-top: 2rem;
+}
+
+.about-text-header{
+    font-size: 37px;
+    letter-spacing: 7px;
+    font-family: 'Poppins',sans-serif;
+}
+.about-text-paragraph{
+    margin-top: 1rem;
+    color: #ffffff;
+    line-height: 25px;
+}
+.about-text span{
+    color: hsl(0 0% 100% / 0.1);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, #fff, #fff);
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+}
+.about-text h2 span{
+    animation-range-start: cover 10vh;
+    animation-range-end: cover 40vh;
+}
+.about-text p span{
+    animation-range-start: cover 15vh;
+    animation-range-end: cover 30vh;
+}
+.about-text a span{
+    animation-range-start: cover 15vh;
+    animation-range-end: cover 30vh;
+}
+@keyframes scroll-reveal{
+    to{
+        background-size: 100% 100%;
+    }
+}
+
+
+.about-icons{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-bottom: 2.5rem;
+}
+.about-icons div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-img-border{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #636363;
+
+}
+.icon-img-border img{
+    margin-left: -1px;
+}
+
+.about-more-btn{
+    padding: 10px 35px;
+    border: 1px solid #636363;
+    color: #dfdfdf;
+    transition: .5s;
+
+}
+
+.about-more-btn:hover{
+    padding: 10px 35px;
+    border: 1px solid #dfdfdf;
+    color: greenyellow;
+}
+/* ---------------------------------------------------------*/
+/* -------------   start about section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start ranning section ----------------------*/
+/* ---------------------------------------------------------*/
+
+.ranning-paragraph{
+    padding: 2.1rem 0;
+    position: relative;
+    z-index: 1111;
+    overflow: hidden;
+}
+.marquee{
+    background-color: #a43737;
+}
+.marquee, .marquee2 {
+    width: 110%;
+    white-space: nowrap;
+    transform: rotate(3.5deg);
+}
+.marquee2{
+
+    position: relative;
+    top: 2rem;
+    left: 0;
+    transform: rotate(-10.5deg);
+}
+.marquee-content, .marquee-content2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    text-transform: uppercase;
+}
+
+.marquee-content {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    transition: .5s;
+}
+
+.marquee-content:hover {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px black;
+    transition: .5s;
+}
+
+.marquee-content2{
+    font-size: 15px;
+    color: #dfdfdf;
+    animation: marqueeTwo 5s linear infinite;
+}
+.web-borders{
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 22px;
+
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+@keyframes marqueeTwo {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+/* ---------------------------------------------------------*/
+/* -------------   end ranning section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start ios-app section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+.ios-app{
+    max-width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.appname {
+    font-size: 40px;
+    color: #fff;
+}
+.app-more-details{
+    margin-top: 1rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #151515;
+    position: relative;
+    z-index: 111;
+    width: 170px;
+    padding: 10px 20px;
+    color: #dfdfdf;
+}
+.app-details{
+    color: #dfdfdf;
+    transition: 1s;
+}
+.app-arrow{
+    color: #dfdfdf;
+    transform: rotate(45deg);
+    transition: 1s;
+    font-size: 20px;
+}
+.app-more-details:hover .app-details{
+    color: #c02f2f;
+}
+.app-more-details:hover .app-arrow{
+    transform: rotate(90deg);
+    color: #c02f2f;
+}
+
+.app-intro {
+    margin-top: 2rem;
+    line-height: 40px;
+    width: 100%;
+    color: #ffffffa5;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.projects h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+.video_intro {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1111;
+
+}
+.video_intro-two{
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+}
+.mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 0 0;
+}
+
+.mobile video {
+    width: 100%;
+    transition: .2s;
+    margin-top: 2rem;
+
+}
+
+/* 2nd project*/
+
+.app-2nd {
+    margin-top: 10rem;
+}
+
+.ios-app2{
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    max-width: 90%;
+    flex-direction: row;
+}
+
+.appname2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.app-intro2 {
+    margin-top: 4rem;
+    line-height: 40px;
+    width: 600px;
+    color: #ffffffa5;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.appdetails2 {
+    margin-top: 2rem;
+    background: #ffffffc6;
+    color: #000;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+
+.appdetails2:hover {
+    background: #a43737; 
+    color:#fff;
+    border-radius: 12px;
+}
+
+.video_intro2 {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    display: flex;
+    margin: auto;
+    width: 700px;
+}
+
+/* ---------------------------------------------------------*/
+/* -------------   end ios-app section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start services section ----------------------*/
+/* ---------------------------------------------------------*/
+
+.services{
+    padding: 4rem 0;
+    max-width: 90%;
+    margin: auto;
+    color: #dfdfdf;
+}
+.services h2{
+    font-size: 37px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.services-row{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.services-item{
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    background: linear-gradient(#151515, #151515);
+    transition: 1.5s;
+    cursor: pointer;
+    position: relative;
+    z-index: 111;
+
+}
+.service-text{
+    position: absolute;
+    top: 40px;
+}
+.services-item:hover .service-text{
+    top: 80px;
+    animation: .5s toptobottomservice ease;
+}
+
+@keyframes toptobottomservice {
+    from{
+        top: 40px;
+    }
+    to{
+        top: 80px;
+    }
+}
+.services-item:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url(/img/bg.jpg) center;
+    background-size: cover;
+    transition: 1.5s;
+    animation: 1s imgshow linear;
+}
+
+
+@keyframes imgshow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.services-number{
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: left;
+    font-size: 50px;
+    color: #636363;
+}
+.services-item:hover .services-number{
+    transform: scale(1);
+    font-weight: bolder;
+}
+.services-item h4{
+    font-size: 13px;
+    color: #c02f2f;
+    margin-top: 20px;
+}
+
+.services-item h3{
+    font-size: 25px;
+    margin-top: 5px;
+}
+.services-item p{
+    width: 100%;
+    font-size: 14px;
+    margin: 20px 0 40px;
+    line-height: 25px;
+}
+.service-btn{
+    position: absolute;
+    bottom: -40px !important;
+} 
+
+.more-aboute-services{
+    width: 220px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #636363;
+    color: #dfdfdf;
+    background-color: transparent;;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.more-aboute-services:hover{
+    border: 1px solid #dfdfdf;
+    color: #c02f2f;
+}
+
+
+
+/* ---------------------------------------------------------*/
+/* -------------   end services section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start team member section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+.section-team-members h2{
+    font-size: 37px;
+    text-align: center;
+    color: #dfdfdf;
+}
+.team-members{
+    max-width: 90%;
+    margin: 4rem auto;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:1rem;
+    text-align: center;
+}
+.member{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.about-person-place{
+    transition: 1s;
+}
+.about-person-place h4{
+    font-size: 30px;
+}
+.about-person-place p{
+    margin-top: 0.5rem;
+    color: #c02f2f;
+}
+.personal-img{
+    margin-top: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/vano.jpg) center;
+    background-size: cover;
+    border: 50%;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #1b191b;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    position: relative;
+    z-index: 11111;
+}
+.name-ilia{
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/ilia.JPG) center;
+    background-size: cover;
+}
+.name-rati{
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/rati.jpg) center;
+    background-size: cover;
+}
+.name-zura{
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(/img/team/zura.jpg) center;
+    background-size: cover;
+}
+.social-icon{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    z-index: 11;
+}
+.social-icon i{
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.profile-effect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background-color: #c02f2f62;
+    border-top-left-radius: 100%;
+}
+
+/* ---------------------------------------------------------*/
+/* -------------   end start team member section ----------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------*/
+/* -------------   start footer section ----------------------*/
+/* ---------------------------------------------------------*/
+
+footer{
+    background-color: #000;
+    margin-top: 10rem;
+    padding: 0 0 5.5rem 0;
+    position: relative;
+}
+.footer-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a43737;
+    padding: 2rem 0;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    top: -90px;
+}
+.footer-logo{
+    font-family: 'Symtext', sans-serif;
+    font-size: 30px;
+    color: #dfdfdf;
+}
+.footer-call{
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.footer-call img{
+    width: 50px;
+    filter: invert(2%) sepia(3%) saturate(4584%) hue-rotate(251deg) brightness(95%) contrast(84%);
+}
+
+.footer-call div a{
+    color: #dfdfdf;
+}
+
+.text-row{
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.text-item h3{
+    color: #dfdfdf;
+    padding: 5px 0;
+    border-bottom: 1px solid #a43737;
+}
+
+.text-item div{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+}
+.text-item div a{
+    color: #b0b0b0;
+}
+.text-item div a:hover{
+    text-decoration: underline;
+}
+
+.text-item p{
+    margin-top: 1.5rem;
+    line-height: 25px;
+    color: #b0b0b0;
+}
+.footer-form{
+    margin-top: 2rem;
+}
+.footer-form input{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #333;
+    color: #b0b0b0;
+}
+.footer-form button{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border: 2px solid #a43737;
+    background-color: transparent;
+    color: #a43737;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer-form button:hover{
+    color: black;
+    background-color: #a43737;
+}
+
+.backtotopbtn a{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 18px;
+    background-color: #a43737;
+}
+.backtotopbtn i{
+    color: #b0b0b0;
+}
+
+.scroll-top-icon{
+    font-size: 20px;
+}
+
+
+
+/* ---------------------------------------------------------*/
+/* ---------------------  scroll style ----------------------*/
+/* ---------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a43737; 
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a43737; 
+}
